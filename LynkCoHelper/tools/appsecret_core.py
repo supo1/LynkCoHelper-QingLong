@@ -342,7 +342,7 @@ def ensure_apk():
         # 写死上游仓库：fork 无 Release（fork 不复制 Release），动态拼
         # GITHUB_REPOSITORY 在 fork 上必然 404；失败仍有官方 CDN 兜底
         rel_url = ("https://github.com/shovelshit/LynkCoHelper/releases/download/"
-                   "apk-latest/lynkco-latest.apk")
+                   "apk-v4.2.7/lynkco-v4.2.7.apk")
         dest = os.path.join(TOOLS_DIR, "lynkco-latest.apk")
         print("[*] 尝试从仓库 Release 拉取 APK ...")
         if _try_download(rel_url, dest, 285):
